@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" href="/img/285686_cat_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__item">
+            <img class="header__exit js-exit" src="/img/3005766-20.png" alt="Exit">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="user">
+                <div class="user__photo-wrapper">
+                    <img class="user__photo js-user-photo" alt="User's Photo">
+                </div>
+
+                <div class="user__select-wrapper">
+                    <input class="user__select js-select" accept=".png, .jpeg, .jpg" type="file">
+                    <button class="user__new-select">Select</button>
+                </div>
+
+                <div class="user__remove-wrapper">
+                    <button class="user__remove js-remove">Remove</button>
+                </div>
+            </div>
+            
+            <form class="form js-form" action="#">
+                <div class="form__saved-wrapper js-saved">
+                    <img class="form__saved" src="/img/299110_check_sign_icon.png" alt="Saved">
+                </div>
+
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label class="form__label">Firstname:</label>
+                        <input class="form__input js-firstname" type="text">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Lastname:</label>
+                        <input class="form__input js-lastname" type="text">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Birthday:</label>
+                        <input class="form__input js-b-day" type="text">
+                    </div>
+                </div>
+
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label class="form__label">Country:</label>
+                        <input class="form__input js-country" type="text">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">City:</label>
+                        <input class="form__input js-city" type="text">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Phone number:</label>
+                        <input class="form__input js-phone" type="text" maxlength="16">
+                    </div>
+                </div>
+
+                <button class="save-btn js-save">Save</button>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="/scripts/module.js"></script>
+    <script src="/scripts/profile.js"></script>
+</body>
+</html>

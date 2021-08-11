@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="shortcut icon" href="/img/299105_lock_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/general-style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <h2 class="title">Welcome Back!</h2>
+
+        <form class="form js-form">
+            <input class="form__input js-phone" type="text" placeholder="Phone" value="+7 " maxlength="16">
+            <span class="form__error js-phone-error">Incorrect phone number!</span>
+
+            <input class="form__input js-password" type="password" placeholder="Password">
+            <span class="form__error js-password-error">Password must have urgent, capital letters and digits! </span>
+
+            <span class="form__forgot-pass js-forgot-pass">Forgot password?</span>
+
+            <button class="form__button">Log in</button>
+        </form>
+
+        <div class="footer">
+            <div class="footer__account">Don't have an account? <span class="footer__text js-create-acc">Create
+                    now</span></div>
+        </div>
+    </main>
+
+    <script src="/scripts/module.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

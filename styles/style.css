@@ -1,0 +1,15 @@
+.form__forgot-pass {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.form__forgot-pass:hover {
+  color: #8F0EF4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form__button {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */

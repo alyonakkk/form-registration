@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,aAAS,CAAA;EACL,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "create-acc.scss"
+    ],
+    "names": [],
+    "file": "create-acc.css"
+}

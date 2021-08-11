@@ -1,0 +1,143 @@
+$dark-blue: #240F88;
+$light-purple: #8F0EF4;
+$white: #ffffff;
+$black: #000000;
+$silver: #c0c0c0;
+$red: #ff0000;
+$shadow: #5b5b5b;
+
+@mixin bc-gradient() {
+    background: linear-gradient(to right, $dark-blue, $light-purple) border-box;
+}
+
+@mixin border-gradien() {
+    background: linear-gradient($white, $white) padding-box,
+                linear-gradient(to right, $dark-blue, $light-purple) border-box;
+}
+
+@mixin inputs-style() {
+    margin-top: 30px;
+    padding: 15px;
+
+    border: 2px solid transparent;
+    border-radius: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.5px;
+
+    @include bc-gradient();
+}
+
+.main{
+    padding: 150px 20px 30px 20px;
+
+    position: relative;
+
+    width: 350px;
+    height: auto;
+
+    background-color: $white;
+    border: 2px solid $light-purple;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $shadow,
+    0.5px 0.5px 20px $shadow}
+
+.title{
+    margin: 0;
+
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    &__input{
+        @include inputs-style();
+
+        @include border-gradien();
+
+        outline: none;
+
+        &:focus{
+            box-shadow: 1px 1px 10px #230f8844,
+            -1px -1px 10px #230f8844;
+        }
+    }
+
+    &__error{
+        margin-top: 5px;
+
+        display: none;
+
+        color: $red;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    &__error-active{
+        display: block;
+    }
+    
+    &__footer{
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button{
+        
+        position: relative;
+        top: 0;
+
+        @include inputs-style();
+
+        align-self: center;
+
+        color: $white;
+
+        @include bc-gradient();
+        box-shadow: 2px 1.5px 2px $silver;
+        text-shadow: 1px 1px 2px $silver;
+
+        cursor: pointer;
+
+        &:hover{
+            top: 3px;
+
+            background: linear-gradient(to right, $dark-blue, $dark-blue);
+            box-shadow: none;
+        }
+    }
+}
+
+.footer{
+    margin-top: 50px;
+
+    &__account{
+        text-align: center;
+    }
+
+    &__text{
+        color: $light-purple;
+        font-weight: bold;
+        
+        &:hover{
+            text-decoration: underline;
+
+            cursor: pointer;
+        }
+    }
+}

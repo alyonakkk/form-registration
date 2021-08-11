@@ -1,0 +1,26 @@
+$dark-blue: #240F88;
+$light-purple: #8F0EF4;
+$silver: #c0c0c0;
+
+@mixin bc-gradient() {
+    background: linear-gradient(to right, $dark-blue, $light-purple) border-box;
+}
+
+.form{
+    &__forgot-pass{
+        margin-top: 5px;
+
+        text-align: right;
+
+        &:hover{
+            color: $light-purple;
+            text-decoration: underline;
+
+            cursor: pointer;
+        }
+    }
+
+    &__button{
+        width: 100px;
+    }
+}
